@@ -17,7 +17,7 @@ const Employees = () => {
     <div className="d-flex flex-wrap p-2">
       {employee.map((item) => (
         <EmployeeCard
-          name={item.name.first}
+          name={item.name.first + " " + item.name.last}
           cell={item.cell}
           img={item.picture.large}
         />
